@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   images = ['img01.jpg', 'img04.jpg', 'img07.jpg'];
   currentImage = 0;
+  showImage = true;
 
   ngOnInit() {
     this.updateImage();
@@ -19,6 +20,10 @@ export class AppComponent implements OnInit {
       if (this.currentImage >= this.images.length) {
         this.currentImage = 0;
       }
+      this.showImage = false;
+      setTimeout(() => {
+        this.showImage = true;
+      }, 10);
     }, 5000);
   }
 }
