@@ -6,6 +6,27 @@
   max-width: 100%;
 }
 
+.slide-overlay {
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  p {
+    max-width: 600px;
+
+    padding-left: 32px;
+
+    border-left: 6px solid #de6c64;
+    color: white;
+    font-size: 4rem;
+  }
+}
+
 .img-slide {
   object-fit: cover;
 
